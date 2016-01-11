@@ -4,6 +4,11 @@ Simple Clojure app that uses [Apache Camel](https://camel.apache.org) and [camel
 
 ## Usage
 
+Build with [Leiningen](https://github.com/technomancy/leiningen):
+```
+lein uberjar
+```
+
 ```
 twitter-elasticsearch-writer - reads from Twitter and writes to ElasticSearch.
 
