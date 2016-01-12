@@ -16,9 +16,8 @@
                 "created_at" (.. tweet (getCreatedAt) (getTime))
                 "language" (.getLang tweet)
                 "retweet_count" (.getRetweetCount tweet)
+                "timestamp" (System/currentTimeMillis)
                 "location" (.. tweet (getUser) (getLocation))
-                ;"location_latitude" (.. tweet (getGeoLocation) (getLatitude))
-                ;"location_longitude" (.. tweet (getGeoLocation) (getLongitude))
                 }]
       (set-body ex body))))
 
